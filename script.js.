@@ -1,0 +1,25 @@
+document.getElementById("form-predicciones").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Obtener valores del formulario
+    let jugador = document.getElementById("jugador").value;
+    let pos1_8 = document.getElementById("pos1-8").value;
+    let pos9_16 = document.getElementById("pos9-16").value;
+    let pos17_24 = document.getElementById("pos17-24").value;
+    let pos25_36 = document.getElementById("pos25-36").value;
+
+    // Guardar predicciones (por ahora en la consola)
+    console.log("Predicciones de " + jugador);
+    console.log("1-8:", pos1_8);
+    console.log("9-16:", pos9_16);
+    console.log("17-24:", pos17_24);
+    console.log("25-36:", pos25_36);
+
+    alert("Predicciones guardadas para " + jugador);
+});
+
+document.getElementById("calcular-resultados").addEventListener("click", function() {
+    // Simular el cálculo de resultados
+    let resultado = "Aquí irán los resultados y la clasificación.";
+    document.getElementById("clasificacion").innerText = resultado;
+});
