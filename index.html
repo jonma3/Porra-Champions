@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porra Champions League</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Porra de la Champions League</h1>
+    </header>
+
+    <section id="predicciones">
+        <h2>Predicciones</h2>
+        <form id="form-predicciones">
+            <label for="jugador">Jugador:</label>
+            <input type="text" id="jugador" name="jugador" required>
+
+            <label for="pos1-8">1-8:</label>
+            <input type="text" id="pos1-8" name="pos1-8" required>
+
+            <label for="pos9-16">9-16:</label>
+            <input type="text" id="pos9-16" name="pos9-16" required>
+
+            <label for="pos17-24">17-24:</label>
+            <input type="text" id="pos17-24" name="pos17-24" required>
+
+            <label for="pos25-36">25-36:</label>
+            <input type="text" id="pos25-36" name="pos25-36" required>
+
+            <button type="submit">Guardar Predicción</button>
+        </form>
+    </section>
+
+    <section id="resultados">
+        <h2>Resultados</h2>
+        <button id="calcular-resultados">Calcular Resultados</button>
+        <div id="clasificacion">
+            <!-- Aquí se mostrarán los resultados calculados -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+              </html>
